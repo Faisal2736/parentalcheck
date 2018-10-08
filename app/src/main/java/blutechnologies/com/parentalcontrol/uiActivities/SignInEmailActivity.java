@@ -15,7 +15,7 @@ public class SignInEmailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in_email);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         btn_next_signIn = findViewById(R.id.btn_next_signIn);
 
         btn_next_signIn.setOnClickListener(new View.OnClickListener() {
