@@ -40,6 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textColor="@color/md_white_1000"
             android:text="Whose device are you setting up" />
 
         <TextView
@@ -47,6 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/tv_deviceSetup"
             android:gravity="center"
+            android:textColor="@color/md_white_1000"
             android:text="right now ?" />
 
 
@@ -66,13 +68,17 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/md_purple_500"
-            android:text="CHILD " />
+            android:text="CHILD "
+            android:textColor="@color/md_white_1000"
+            android:textStyle="bold" />
         <Button
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:background="md'"
-            android:text="PARENT" />
+            android:background="@color/md_purple_500"
+            android:text="PARENT"
+            android:textColor="@color/md_white_1000"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
