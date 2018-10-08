@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".uiActivities.SignInEmailActivity"
+    tools:context=".uiActivities.ChildSignInEmailActivity"
     tools:showIn="@layout/activity_sign_in_email"
     android:padding="30dp">
     <android.support.design.widget.TextInputLayout

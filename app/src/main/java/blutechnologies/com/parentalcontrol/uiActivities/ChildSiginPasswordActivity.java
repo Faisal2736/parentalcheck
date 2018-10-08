@@ -8,22 +8,23 @@ import android.widget.Button;
 
 import blutechnologies.com.parentalcontrol.R;
 
-public class SignInEmailActivity extends AppCompatActivity {
-    private Button btn_next_signIn;
+public class ChildSiginPasswordActivity extends AppCompatActivity {
+    private Button btn_nextPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_in_email);
-        btn_next_signIn = findViewById(R.id.btn_next_signIn);
+        setContentView(R.layout.activity_sigin_password);
+        btn_nextPassword = findViewById(R.id.btn_nextPassword);
 
-        btn_next_signIn.setOnClickListener(new View.OnClickListener() {
+        btn_nextPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SignInEmailActivity.this, SiginPasswordActivity.class);
+                Intent intent = new Intent(ChildSiginPasswordActivity.this, DevicesSetupActivity.class);
                 startActivity(intent);
             }
         });
+
     }
 
 }

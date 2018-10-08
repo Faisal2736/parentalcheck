@@ -21,7 +21,7 @@
             android:label="@string/title_activity_welcome_acitivty"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".uiActivities.SignInEmailActivity"
+            android:name=".uiActivities.ChildSignInEmailActivity"
             android:label="@string/title_activity_sign_in"
             android:parentActivityName=".uiActivities.WelcomeAcitivty"
             android:theme="@style/AppTheme.NoActionBar">
@@ -30,22 +30,22 @@
                 android:value="blutechnologies.com.parentalcontrol.uiActivities.WelcomeAcitivty" />
         </activity>
         <activity
-            android:name=".uiActivities.SiginPasswordActivity"
+            android:name=".uiActivities.ChildSiginPasswordActivity"
             android:label="@string/title_activity_sigin_password"
-            android:parentActivityName=".uiActivities.SignInEmailActivity"
+            android:parentActivityName=".uiActivities.ChildSignInEmailActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="blutechnologies.com.parentalcontrol.uiActivities.SignInEmailActivity" />
+                android:value="blutechnologies.com.parentalcontrol.uiActivities.ChildSignInEmailActivity" />
         </activity>
         <activity
             android:name=".uiActivities.DevicesSetupActivity"
             android:label="@string/title_activity_devices_setup"
-            android:parentActivityName=".uiActivities.SiginPasswordActivity"
+            android:parentActivityName=".uiActivities.ChildSiginPasswordActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="blutechnologies.com.parentalcontrol.uiActivities.SiginPasswordActivity" />
+                android:value="blutechnologies.com.parentalcontrol.uiActivities.ChildSiginPasswordActivity" />
         </activity>
         <activity
             android:name=".uiActivities.ParentSignupEmailActivity"
