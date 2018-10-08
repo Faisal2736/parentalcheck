@@ -47,6 +47,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="blutechnologies.com.parentalcontrol.uiActivities.SiginPasswordActivity" />
         </activity>
+        <activity
+            android:name=".uiActivities.ParentSignupEmailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".uiActivities.ParentSignupPasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".uiActivities.ParentActivationCodeActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

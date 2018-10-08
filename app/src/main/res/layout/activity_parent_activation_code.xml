@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_blue_400"
+    tools:context=".uiActivities.ParentActivationCodeActivity">
+
+    <Button
+        android:id="@+id/createAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:elevation="5dp"
+        android:background="@color/md_white_1000"
+        android:textColor="@color/md_blue_400"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:textSize="18sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnAddNew">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true"
+            android:padding="15dp">
+
+            <com.poovam.pinedittextfield.LinePinField
+                android:id="@+id/lineField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textSize="29sp"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/md_white_1000"
+                android:textSelectHandle="@drawable/text_handle"
+                app:noOfFields="6"
+                app:fieldColor="@color/md_grey_200"
+                app:highlightColor="@color/md_white_1000"
+                app:highlightEnabled="true"
+                app:lineThickness="2dp"
+                app:highlightSingleFieldMode="true"
+                app:isCursorEnabled="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:textColor="@color/md_grey_200"
+                android:text="We've send a six-digit confirmation code to your email address. Enter it here to confirm your email address."/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

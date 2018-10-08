@@ -51,6 +51,7 @@
             android:layout_height="wrap_content"
             android:text="SIGN IN "/>
         <Button
+            android:id="@+id/btn_create_account"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
