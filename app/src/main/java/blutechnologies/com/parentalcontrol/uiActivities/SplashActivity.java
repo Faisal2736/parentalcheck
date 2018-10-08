@@ -12,7 +12,6 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-
-        Toast.makeText(this, "very good", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Ali", Toast.LENGTH_SHORT).show();
     }
 }
