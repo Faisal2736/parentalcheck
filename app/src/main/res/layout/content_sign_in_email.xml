@@ -7,6 +7,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".uiActivities.SignInEmailActivity"
     tools:showIn="@layout/activity_sign_in_email"
+    android:background="@color/md_deep_orange_500"
     android:padding="30dp">
     <android.support.design.widget.TextInputLayout
         android:id="@+id/nameTextInput"
@@ -28,7 +29,7 @@
     </android.support.design.widget.TextInputLayout>
 
     <Button
-        android:id="@+id/checkOut"
+        android:id="@+id/btn_next"
         android:layout_width="match_parent"
         android:layout_height="@dimen/btn_height"
         android:textColor="@color/md_white_1000"
