@@ -1,5 +1,6 @@
 package blutechnologies.com.parentalcontrol.uiActivities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -17,10 +18,16 @@ public class WelcomeAcitivty extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome_acitivty);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
         // init views
         btn_SignIn = findViewById(R.id.btn_sign_in);
+
+        btn_SignIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(WelcomeAcitivty.this,SignInEmailActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
     }

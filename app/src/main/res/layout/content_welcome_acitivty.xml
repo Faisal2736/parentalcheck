@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".uiActivities.WelcomeAcitivty"
-    tools:showIn="@layout/activity_welcome_acitivty">
+    tools:showIn="@layout/activity_welcome_acitivty"
+    android:background="@color/md_purple_500">
 
    <LinearLayout
        android:layout_width="match_parent"
@@ -23,18 +24,24 @@
            android:layout_height="wrap_content"
            android:gravity="center"
            android:layout_marginTop="30dp"
-           android:text="@string/tv_welcome_to_parental_check"/>
+           android:text="@string/tv_welcome_to_parental_check"
+           android:textColor="@color/md_white_1000"
+           android:textStyle="bold"/>
        <TextView
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:gravity="center"
            android:layout_marginTop="10dp"
-           android:text="Providing Healthy Online Experiences"/>
+           android:text="Providing Healthy Online Experiences"
+           android:textColor="@color/md_white_1000"
+           android:textStyle="bold"/>
        <TextView
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:gravity="center"
-           android:text="for your family online"/>
+           android:text="for your family online"
+           android:textColor="@color/md_white_1000"
+           android:textStyle="bold"/>
 
    </LinearLayout>
 
@@ -49,12 +56,18 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="SIGN IN "/>
+            android:text="SIGN IN "
+            android:textColor="@color/md_white_1000"
+            android:textStyle="bold"
+            android:background="@color/md_purple_500"/>
         <Button
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="CREATE ACCOUNT"/>
+            android:text="CREATE ACCOUNT"
+            android:textColor="@color/md_white_1000"
+            android:textStyle="bold"
+            android:background="@color/md_purple_500"/>
 
     </LinearLayout>
 
