@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="blutechnologies.com.parentalcontrol">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".uiActivities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".uiActivities.WelcomeAcitivty"
+            android:label="@string/title_activity_welcome_acitivty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".uiActivities.SignInEmailActivity"
+            android:label="@string/title_activity_sign_in"
+            android:parentActivityName=".uiActivities.WelcomeAcitivty"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="blutechnologies.com.parentalcontrol.uiActivities.WelcomeAcitivty" />
+        </activity>
+        <activity
+            android:name=".uiActivities.SiginPasswordActivity"
+            android:label="@string/title_activity_sigin_password"
+            android:parentActivityName=".uiActivities.SignInEmailActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="blutechnologies.com.parentalcontrol.uiActivities.SignInEmailActivity" />
+        </activity>
+        <activity
+            android:name=".uiActivities.DevicesSetupActivity"
+            android:label="@string/title_activity_devices_setup"
+            android:parentActivityName=".uiActivities.SiginPasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="blutechnologies.com.parentalcontrol.uiActivities.SiginPasswordActivity" />
+        </activity>
+    </application>
+
+</manifest>

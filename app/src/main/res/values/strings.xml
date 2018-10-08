@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Parental Control</string>
+    <string name="title_activity_welcome_acitivty">Welcome</string>
+    <string name="tv_welcome_to_parental_check">Welcome To Parental Check</string>
+    <string name="title_activity_sign_in">SignInActivity</string>
+    <string name="title_activity_sigin_password">SiginPasswordActivity</string>
+    <string name="title_activity_devices_setup">DevicesSetup</string>
+</resources>
