@@ -13,26 +13,23 @@ import blutechnologies.com.parentalcontrol.R;
 
 public class WelcomeAcitivty extends AppCompatActivity {
     private Button btn_SignIn;
-    private Button btn_create_account;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome_acitivty);
-//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
         // init views
         btn_SignIn = findViewById(R.id.btn_sign_in);
-        btn_create_account = findViewById(R.id.btn_create_account);
 
-        btn_create_account.setOnClickListener(new View.OnClickListener() {
+        btn_SignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Intent intent = new Intent(WelcomeAcitivty.this, ParentSignupEmailActivity.class);
+                Intent intent = new Intent(WelcomeAcitivty.this,SignInEmailActivity.class);
                 startActivity(intent);
             }
         });
+
+
     }
 
 }
