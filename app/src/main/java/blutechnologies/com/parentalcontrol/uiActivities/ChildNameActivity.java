@@ -11,15 +11,14 @@ import android.widget.Button;
 
 import blutechnologies.com.parentalcontrol.R;
 
+public class ChildNameActivity extends AppCompatActivity {
 
-public class ParentActivationCodeActivity extends AppCompatActivity {
-
-    Button createAccount;
+    Button btnNext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_parent_activation_code);
+        setContentView(R.layout.activity_child_name);
 
         changeStatusBarColor();
         initViews();
@@ -28,16 +27,16 @@ public class ParentActivationCodeActivity extends AppCompatActivity {
 
     private void initViews() {
 
-        createAccount = findViewById(R.id.createAccount);
+        btnNext = findViewById(R.id.btnNext);
     }
 
     private void initListeners() {
 
-        createAccount.setOnClickListener(new View.OnClickListener() {
+        btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(ParentActivationCodeActivity.this, ChildNameActivity.class);
+                Intent intent = new Intent(ChildNameActivity.this, ChildAgeActivity.class);
                 startActivity(intent);
             }
         });

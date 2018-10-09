@@ -23,6 +23,12 @@
         <item name="android:textColorHint">@color/md_grey_100</item>
     </style>
 
+    <style name="MyEditText5" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/md_white_1000</item>
+        <item name="colorControlActivated">@color/md_white_1000</item>
+        <item name="android:textColorHint">@color/md_white_1000</item>
+    </style>
+
     <!-- Edit Text theme -->
 
     <style name="MyEditText" parent="Theme.AppCompat.Light">

@@ -53,7 +53,14 @@
         <activity
             android:name=".uiActivities.ParentSignupPasswordActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".uiActivities.ParentActivationCodeActivity"
+        <activity
+            android:name=".uiActivities.ParentActivationCodeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".uiActivities.ChildNameActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".uiActivities.ChildAgeActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
