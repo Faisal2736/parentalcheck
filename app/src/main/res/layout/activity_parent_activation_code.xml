@@ -11,7 +11,7 @@
         android:id="@+id/createAccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Next"
+        android:text="Verify"
         android:elevation="5dp"
         android:background="@color/md_white_1000"
         android:textColor="@color/md_blue_400"
@@ -32,10 +32,10 @@
             android:padding="15dp">
 
             <com.poovam.pinedittextfield.LinePinField
-                android:id="@+id/lineField"
+                android:id="@+id/code"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"
+                android:inputType="text"
                 android:textSize="29sp"
                 android:layout_marginTop="50dp"
                 android:textColor="@color/md_white_1000"
