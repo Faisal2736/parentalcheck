@@ -3,6 +3,19 @@
     package="blutechnologies.com.parentalcontrol">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -63,7 +76,49 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".uiActivities.ChildAgeActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".uiActivities.ChildListActivity"
+            android:label="@string/title_activity_child_list"
+            android:parentActivityName=".uiActivities.DevicesSetupActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="blutechnologies.com.parentalcontrol.uiActivities.DevicesSetupActivity" />
+        </activity>
+        <activity
+            android:name=".uiActivities.ChildConfigurePermissionActivity"
+            android:label="@string/title_activity_child_configure_permission"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".uiActivities.ChildStayConnectedBackgroundActivity"
+            android:label="@string/title_activity_child_stay_connected_background"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".uiActivities.ChildAppStatisticActivity"
+            android:label="@string/title_activity_child_app_statistic"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".uiActivities.ChildAcessibiltyActivity"
+            android:label="@string/title_activity_child_acessibilty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".uiActivities.ChildHurrayActivity"
+            android:label="@string/title_activity_child_almost_done"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".uiActivities.ChildMessengerActivity"
+            android:label="@string/title_activity_child_messenger"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".uiActivities.ChildResetPasswordActivity"
+            android:label="@string/title_activity_child_reset"
+            android:parentActivityName=".uiActivities.ChildSiginPasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="blutechnologies.com.parentalcontrol.uiActivities.ChildSiginPasswordActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_pink_A400"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".uiActivities.ChildAppStatisticActivity"
+    tools:showIn="@layout/activity_child_app_statistic">
+
+
+    <TextView
+        android:id="@+id/txt_choose_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_top_margin"
+        android:gravity="center"
+        android:text="@string/ready"
+        android:textColor="@color/md_white_1000"
+        android:textSize="@dimen/txt_heading_size" />
+
+
+    <ImageView
+        android:id="@+id/img_configure"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/txt_choose_profile"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_connected" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/img_configure"
+        android:layout_marginTop="90dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Here you need to activate the \n collection of app usage statistics by \n Parental Control "
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/txt_sunheading_size" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_statistic"
+        android:layout_width="@dimen/byn_default_width"
+        android:layout_height="@dimen/btn_default_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="right"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/md_white_1000"
+        android:text="@string/enable"
+        android:textColor="@color/md_pink_A400" />
+
+
+</RelativeLayout>

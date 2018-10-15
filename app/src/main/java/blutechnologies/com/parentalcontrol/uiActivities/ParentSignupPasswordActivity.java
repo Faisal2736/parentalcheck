@@ -102,7 +102,7 @@ public class ParentSignupPasswordActivity extends AppCompatActivity {
 
                 if (!password.getText().toString().equals(confirmPassword.getText().toString())) {
                     confirmPasswordTextInput.setErrorEnabled(true);
-                    confirmPasswordTextInput.setError("Password mistatch");
+                    confirmPasswordTextInput.setError("Password mismatch");
                     return;
                 } else {
                     confirmPasswordTextInput.setErrorEnabled(false);
@@ -119,10 +119,16 @@ public class ParentSignupPasswordActivity extends AppCompatActivity {
 
                         progressDialog.dismiss();
                         RegisterResponse registerResponse = response.body();
+                        String token = null;
 
                         if (response.isSuccessful()) {
+                            if (registerResponse.getAccess_token() != null) {
+                                token = registerResponse.getAccess_token();
+                            }
 
-                            if (registerResponse != null) {
+                            Toast.makeText(ParentSignupPasswordActivity.this, token, Toast.LENGTH_SHORT).show();
+
+
                                 if (registerResponse.isSuccess()) {
 
                                     editor = prefLogIn.edit();
@@ -151,10 +157,7 @@ public class ParentSignupPasswordActivity extends AppCompatActivity {
                                                 "Something went wrong3", Toast.LENGTH_SHORT).show();
                                     }
                                 }
-                            } else {
-                                Toast.makeText(ParentSignupPasswordActivity.this,
-                                        "Something went wrong4", Toast.LENGTH_SHORT).show();
-                            }
+
                         } else {
                             Toast.makeText(ParentSignupPasswordActivity.this,
                                     "Something went wrong5", Toast.LENGTH_SHORT).show();

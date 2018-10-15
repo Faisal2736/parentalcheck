@@ -5,4 +5,26 @@
     <string name="title_activity_sign_in">SignInActivity</string>
     <string name="title_activity_sigin_password">SiginPasswordActivity</string>
     <string name="title_activity_devices_setup">DevicesSetup</string>
+    <string name="title_activity_child_list">ChildListActivity</string>
+    <string name="choose_child">Create or choose a profile</string>
+    <string name="title_activity_child_configure_permission">ChildConfigurePermissionActivity
+    </string>
+    <string name="enable">Enable</string>
+    <string name="cinfigure_permission">Configure Permission</string>
+    <string name="title_activity_child_stay_connected_background">
+        ChildStayConnectedBackgroundActivity
+    </string>
+    <string name="stay_connected">Stay Connected</string>
+    <string name="title_activity_child_app_statistic">ChildAppStatisticActivity</string>
+    <string name="ready">Ready</string>
+    <string name="title_activity_child_acessibilty">ChildAcessibiltyActivity</string>
+    <string name="almost_done">Excellent ! Almost Done</string>
+    <string name="title_activity_child_almost_done">ChildAlmostDoneActivity</string>
+    <string name="txt_hurray">Hurray</string>
+    <string name="stay_background_instruction">To Prevent Parental Control from being disabled by Android when the battery is low please adjust Battery optimization settings: \n  \n  \n  -Select menu item All apps  \n  -Find and select Parental Control \n   -Choose don\'t optimize</string>
+    <string name="title_activity_child_messenger">ChildMessengerActivity</string>
+    <string name="title_activity_child_reset">ChildResetActivity</string>
+    <string name="reset_your_password">Reset your password</string>
+    <string name="next">Next</string>
+    <string name="your_password_for_parental_control">Your Password for Parental Control</string>
 </resources>
