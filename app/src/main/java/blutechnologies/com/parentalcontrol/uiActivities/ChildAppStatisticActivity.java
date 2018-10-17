@@ -8,25 +8,25 @@ import android.widget.Button;
 
 import blutechnologies.com.parentalcontrol.R;
 
-public class DevicesSetupActivity extends AppCompatActivity {
-    private Button btn_child_device;
+public class ChildAppStatisticActivity extends AppCompatActivity {
+
+    private Button btn_statistic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_devices_setup);
-        //init viewa
+        setContentView(R.layout.activity_child_app_statistic);
 
-        btn_child_device = findViewById(R.id.btn_child_device);
+        btn_statistic = findViewById(R.id.btn_statistic);
 
-        btn_child_device.setOnClickListener(new View.OnClickListener() {
+        btn_statistic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentChildListActivity = new Intent(DevicesSetupActivity.this, ChildListActivity.class);
-                startActivity(intentChildListActivity);
-
+                Intent intentChildStat = new Intent(ChildAppStatisticActivity.this, ChildHurrayActivity.class);
+                startActivity(intentChildStat);
             }
         });
+
     }
 
 }

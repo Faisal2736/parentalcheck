@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_green_A400"
+    android:padding="20dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".uiActivities.ChildResetPasswordActivity"
+    tools:showIn="@layout/activity_child_reset">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_your_password"
+        android:textColor="@color/md_white_1000"
+        android:textSize="@dimen/default_tv_heading_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:text="When you press the button below \nwill send you super secret email with a link to click on so you \nreset your password."
+        android:textColor="@color/md_white_1000"
+        android:textSize="@dimen/default_tv_heading_size" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/md_white_1000"
+        android:text="Yes, I want to reset my password"
+        android:textColor="@color/md_green_A400"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

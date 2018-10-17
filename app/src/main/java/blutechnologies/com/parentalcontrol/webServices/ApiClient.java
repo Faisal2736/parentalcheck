@@ -16,6 +16,8 @@ public class ApiClient {
     public static Retrofit getApiClient()
 
     {
+
+
         Log.d(TAG, "getApiClient: is called ");
         if (retrofit == null) {
             retrofit = new Retrofit.Builder().baseUrl(BASE_URL).

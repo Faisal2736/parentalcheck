@@ -63,21 +63,19 @@
         android:weightSum="2">
 
         <Button
-            android:id="@+id/btn_sign_in"
+            android:id="@+id/btn_child_device"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@color/md_purple_500"
             android:text="CHILD "
-            android:textColor="@color/md_white_1000"
+            android:textColor="@color/md_purple_500"
             android:textStyle="bold" />
         <Button
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:background="@color/md_purple_500"
             android:text="PARENT"
-            android:textColor="@color/md_white_1000"
+            android:textColor="@color/md_purple_500"
             android:textStyle="bold" />
 
     </LinearLayout>

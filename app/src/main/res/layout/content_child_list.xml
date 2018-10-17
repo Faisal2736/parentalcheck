@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_pink_A400"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".uiActivities.ChildListActivity"
+    tools:showIn="@layout/activity_child_list">
+
+    <TextView
+        android:id="@+id/txt_choose_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_top_margin"
+        android:gravity="center"
+        android:text="@string/choose_child"
+        android:textColor="@color/md_white_1000"
+        android:textSize="@dimen/txt_heading_size" />
+
+    <ImageView
+        android:id="@+id/img_child_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_choose_profile"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/ic_child_list_main" />
+
+    <TextView
+        android:id="@+id/txt_detail_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_child_list"
+        android:layout_marginTop="@dimen/default_top_margin"
+        android:gravity="center"
+        android:text="Parental check needs to assign a profile to this device in order to protect it.Please select an existing profile or create by pressing +"
+        android:textColor="@color/md_white_1000"
+        android:textSize="@dimen/txt_sunheading_size" />
+
+    <LinearLayout
+        android:id="@+id/lin_child_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_detail_profile"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/default_top_margin"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imd_child_name"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_child_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="zaid"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/txt_sunheading_size"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
