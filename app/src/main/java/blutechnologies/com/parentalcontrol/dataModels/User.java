@@ -4,7 +4,6 @@ public class User {
 
     private String id;
     private String email;
-    private String permissions;
     private String last_login;
     private String first_name;
     private String last_name;
@@ -36,14 +35,6 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getPermissions() {
-        return permissions;
-    }
-
-    public void setPermissions(String permissions) {
-        this.permissions = permissions;
     }
 
     public String getLast_login() {

@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -98,7 +99,7 @@ public class ParentActivationCodeActivity extends AppCompatActivity {
                                     startActivity(intent);
                                 } else {
                                     Toast.makeText(ParentActivationCodeActivity.this,
-                                            activationResponse.getError(), Toast.LENGTH_LONG).show();
+                                            "Code does not match.Please try again", Toast.LENGTH_LONG).show();
                                 }
                             } else {
                                 Toast.makeText(ParentActivationCodeActivity.this,
@@ -115,6 +116,7 @@ public class ParentActivationCodeActivity extends AppCompatActivity {
 
                         progressDialog.dismiss();
                         Toast.makeText(ParentActivationCodeActivity.this, "Network Problem", Toast.LENGTH_SHORT).show();
+                        Log.d("baches", "onResponse: " + t.getMessage());
                     }
                 });
             }

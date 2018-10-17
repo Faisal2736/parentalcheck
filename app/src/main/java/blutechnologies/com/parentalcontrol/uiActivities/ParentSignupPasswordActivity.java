@@ -109,6 +109,13 @@ public class ParentSignupPasswordActivity extends AppCompatActivity {
                 }
 
                 progressDialog.show();
+
+                Log.d("baches", "onResponse: " + firstName);
+                Log.d("baches", "onResponse: " + lastName);
+                Log.d("baches", "onResponse: " + email);
+                Log.d("baches", "onResponse: " + password.getText().toString());
+                Log.d("baches", "onResponse: " + confirmPassword.getText().toString());
+
                 apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
                 registerCall = apiInterface.registerAPI(firstName, lastName, email,
                         password.getText().toString(), confirmPassword.getText().toString());

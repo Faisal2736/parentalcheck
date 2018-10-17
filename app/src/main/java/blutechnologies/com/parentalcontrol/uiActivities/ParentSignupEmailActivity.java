@@ -77,7 +77,6 @@ public class ParentSignupEmailActivity extends AppCompatActivity {
                     } else {
                         emailTextInput.setErrorEnabled(false);
                     }
-
                     return;
                 }
 
@@ -90,9 +89,9 @@ public class ParentSignupEmailActivity extends AppCompatActivity {
                 }
 
                 Intent intent = new Intent(ParentSignupEmailActivity.this, ParentSignupPasswordActivity.class);
-                intent.putExtra("firstName", firstName.getText().toString().isEmpty());
-                intent.putExtra("lastName", lastName.getText().toString().isEmpty());
-                intent.putExtra("email", email.getText().toString().isEmpty());
+                intent.putExtra("firstName", firstName.getText().toString());
+                intent.putExtra("lastName", lastName.getText().toString());
+                intent.putExtra("email", email.getText().toString());
                 startActivity(intent);
             }
         });
